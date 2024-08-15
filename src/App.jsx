@@ -2,7 +2,32 @@ import { useState } from "react";
 import lovesvg from "./assets/All You Need Is Love SVG Cut File.svg";
 import lovesvg2 from "./assets/Love In The Air SVG Cut File.svg";
 
-export default function Page() {
+export default function App() {
+  const [showMainPage, setShowMainPage] = useState(false);
+
+  const handleClick = () => {
+    setShowMainPage(true);
+  };
+
+  return (
+    <>
+      {showMainPage ? (
+        <Page />
+      ) : (
+        <div className="flex items-center justify-center h-screen bg-white">
+          <button
+            onClick={handleClick}
+            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+          >
+            Click Me!
+          </button>
+        </div>
+      )}
+    </>
+  );
+}
+
+function Page() {
   const [noCount, setNoCount] = useState(0);
   const [yesPressed, setYesPressed] = useState(false);
   const yesButtonSize = noCount * 20 + 16;
