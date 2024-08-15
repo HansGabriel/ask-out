@@ -61,7 +61,7 @@ export default function Page() {
             src="https://gifdb.com/images/high/cute-Love-bear-roses-ou7zho5oosxnpo6k.gif"
           />
           <h1 className="text-4xl md:text-6xl my-4 text-center">
-            Will you be my Valentine?
+            Sue, will you go on a date with me on August 31? I promise this will be different and special. 🥺
           </h1>
           <div className="flex flex-wrap justify-center gap-2 items-center">
             <button
